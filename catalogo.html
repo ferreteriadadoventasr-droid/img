@@ -149,9 +149,9 @@ function fmtMoney(n){
   return curr + " " + n.toFixed(dec);
 }
 function imgUrl(code){
-  const tpl = PAYLOAD.meta.imgTpl || "img/{code}.jpg";
-  return tpl.replaceAll("{code}", encodeURIComponent(code));
+  return `${encodeURIComponent(code)}.jpg`;
 }
+
 function mainPrice(p){
   const A = p.prices.find(x=>String(x.lista).toUpperCase()==="A" && Number.isFinite(x.precio));
   if(A) return A.precio;
