@@ -114,7 +114,7 @@ input,select{
 <div class="wrap">
 <header>
 <div><h1>Catálogo de Precios</h1><small>Generado: 2/6/2026, 11:58:15 AM</small></div>
-<div class="chip mono">Plantilla imagen: img/{code}.jpg</div>
+<div class="chip mono">Plantilla imagen: img/{code}.png</div>
 </header>
 <section class="panel">
 <div class="toolbar">
@@ -129,7 +129,7 @@ input,select{
   <span class="chip" id="chipLists">0 listas</span>
 </div>
 <div class="catalog" id="catalog"></div>
-<div class="footer"><span>Tip: GitHub no lee \\SERVIDOR. Usa <span class="mono">img/{code}.jpg</span> o URL https.</span><span class="mono" id="stamp"></span></div>
+<div class="footer"><span>Tip: GitHub no lee \\SERVIDOR. Usa <span class="mono">img/{code}.png</span> o URL https.</span><span class="mono" id="stamp"></span></div>
 </section></div>
 <script>
 // Data embebida en Base64 (no rompe scripts)
@@ -149,7 +149,7 @@ function fmtMoney(n){
   return curr + " " + n.toFixed(dec);
 }
 function imgUrl(code){
-  return `${encodeURIComponent(code)}.jpg`;
+  return `${encodeURIComponent(code)}.png`;
 }
 
 function mainPrice(p){
